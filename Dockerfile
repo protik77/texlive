@@ -21,7 +21,8 @@ RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - \
 
 
 RUN apt-get install --no-install-recommends --no-install-suggests -y \
-    texlive-full \
+    texlive \
+    texlive-latex-extra \
     python-pygments gnuplot \
     make git \
     && apt-get clean \
